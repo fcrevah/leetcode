@@ -7,6 +7,7 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class ContainsDuplicate {
+    // https://leetcode.com/problems/contains-duplicate
     public static boolean containsDuplicate(int[] originalArray) {
         Set<Integer> numSet = new HashSet<>(IntStream.of(originalArray).boxed().collect(Collectors.toSet()));
         return numSet.size() != originalArray.length;
